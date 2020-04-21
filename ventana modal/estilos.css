@@ -1,0 +1,52 @@
+body {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	border: 0;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: yellow;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: gold;
+}
+
+.ventana-contenedor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .2);
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-5px);
+	transition: all .25s ease;
+}
+
+.ventana-contenedor.mostrar {
+	transform: translateY(0px);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.ventana {
+	width: 80%;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: white;
+	text-align: center;
+}
